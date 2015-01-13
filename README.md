@@ -5,6 +5,17 @@ Cythonを使ってPythonコードをC/C++最適化する実験
 - Python==3.4.1
 - Cython==0.21.2
 
+## 差分
+```
+$ diff -uw fib_noopt.py fib.pyx
+  #===============================================================
+  
+- def calc(n):
++ cpdef int calc(int n):
+      if 0 == n:
+          return 0
+```
+
 ## 結果
 ```
 $ make
@@ -25,4 +36,4 @@ real    0m1.170s
 user    0m0.046s
 sys     0m0.015s
 ```
-10倍以上高速になった。
+こんだけで10倍以上高速になった。
