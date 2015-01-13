@@ -2,8 +2,8 @@
 Cythonを使ってPythonコードをC/C++最適化する実験
 
 ## 依存
-Python==3.4.1
-Cython==0.21.2
+- Python==3.4.1
+- Cython==0.21.2
 
 ## 結果
 ```
