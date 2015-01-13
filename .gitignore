@@ -1,0 +1,9 @@
+/__pycache__/
+
+.*
+!.git*
+*.c
+*.pyd
+*.obj
+*.lib
+*.exp
